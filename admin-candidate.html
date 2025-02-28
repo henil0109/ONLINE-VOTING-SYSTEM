@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="admin-page">
+    <div class="container">
+        <header>
+            <h1>Admin Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" id="start-voting">Start Voting</a></li>
+                    <li><a href="#" id="end-voting">End Voting</a></li>
+                    <li><a href="#" id="view-users">View Users</a></li>
+                    <li><a href="#" id="manage-candidates">Manage Candidates</a></li>
+                    <li><a href="#" id="logout">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="admin-content">
+                <h2>Manage Candidates</h2>
+                <!-- Add Candidate Form -->
+                <form id="add-candidate-form">
+                    <label for="candidate-name">Candidate Name:</label>
+                    <input type="text" id="candidate-name" required>
+                    <label for="candidate-description">Candidate Description:</label>
+                    <input type="text" id="candidate-description" required>
+                    <button type="submit">Add Candidate</button>
+                </form>
+                <!-- List of Candidates -->
+                <ul id="candidate-list"></ul>
+            </div>
+        </main>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>

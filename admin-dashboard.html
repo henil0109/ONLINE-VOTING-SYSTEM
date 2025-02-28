@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Online Voting System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="admin-page">
+    <div class="container">
+        <header>
+            <h1>Admin Dashboard</h1>
+            <nav class="admin-nav">
+                
+                <a href="#" id="logout">Logout</a>
+            </nav>
+        </header>
+        <div class="admin-container">
+            <section class="admin-header">
+                <h2>Welcome, Admin</h2>
+                <p>Select an option from the menu to get started.</p>
+            </section>
+
+            <!-- Admin Task Cards -->
+            <section class="admin-cards">
+                <div class="admin-card">
+                    <h3>Start Voting</h3>
+                    <p>Initiate the voting process for users.</p>
+                    <button id="start-vote-btn">Start</button>
+                </div>
+                <div class="admin-card">
+                    <h3>End Voting</h3>
+                    <p>Stop the voting process and display results.</p>
+                    <button id="end-vote-btn">End</button>
+                </div>
+                <div class="admin-card">
+                    <h3>Manage Candidates</h3>
+                    <p>View and manage candidate information.</p>
+                    <button id="manage-candidates-btn">Manage</button>
+                </div>
+                <div class="admin-card">
+                    <h3>View Users</h3>
+                    <p>See the list of registered users.</p>
+                    <button id="view-users-btn">View</button>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>

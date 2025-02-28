@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote - Online Voting System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Online Voting System</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="sign-up.html">Sign Up</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="result.html">Show Result</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="vote">
+                <h2>Vote for your Candidate</h2>
+                <!-- Submit button directly redirects to thankyou.html -->
+                <form id="vote-form" action="thankyou.html" method="GET">
+                    <label for="candidate">Choose a candidate:</label>
+                    <select id="candidate" name="candidate" required>
+                        <option value="candidate1">Candidate 1</option>
+                        <option value="candidate2">Candidate 2</option>
+                        <option value="candidate3">Candidate 3</option>
+                    </select>
+                    <button type="submit">Submit Vote</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Online Voting System. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

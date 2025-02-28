@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Online Voting System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Online Voting System</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="sign-up.html">Sign Up</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="result.html">Show Result</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="create-account">
+                <h2>Create Account</h2>
+                <form id="create-account-form">
+
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="aadhaar">Aadhaar Card Number:</label>
+                    <input type="text" id="aadhaar" name="aadhaar" required maxlength="12" pattern="[0-9]{12}">
+                    
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" id="phone" name="phone" required maxlength="10" pattern="[0-9]{10}">
+
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" required></textarea>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <button type="submit">Create Account</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Online Voting System. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
